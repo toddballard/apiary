@@ -1,4 +1,4 @@
-HOST: http://www.google.com/
+HOST: http://www.asdf.com/
 
 --- Sample API v2 ---
 ---
@@ -34,3 +34,13 @@ POST /payment
 < 200
 < Content-Type: application/json
 { "receipt": "/payment/receipt/1" }
+
+
+-- Status --
+This resource allows you to get shipping stauts for order Id.  /status/:id
+
+GET  /status/987654321
+> Content-Type: application/json
+< 200
+< Content-Type: application/json
+{ "status": "In route" }
